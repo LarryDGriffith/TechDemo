@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'ml_model_page.dart';
 import 'data_upload_page.dart';
 import 'data_view_page.dart';
+import 'login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/data-view': (context) => const DataViewPage(),
         '/ml-model': (context) => const MLModelPage(),
         '/data-upload': (context) => const DataUploadPage(),
+        '/login': (context) => const LoginPage(),
       },
     );
   }
@@ -72,6 +74,16 @@ class MyHomePage extends StatelessWidget {
                 minimumSize: const Size(200, 50),
               ),
               child: const Text('Data Upload'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              },
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(200, 50),
+              ),
+              child: const Text('Vidual Demo'),
             ),
           ],
         ),
