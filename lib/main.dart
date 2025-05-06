@@ -83,7 +83,7 @@ class MyHomePage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(200, 50),
               ),
-              child: const Text('Vidual Demo'),
+              child: const Text('Visual Demo'),
             ),
           ],
         ),

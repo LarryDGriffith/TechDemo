@@ -71,6 +71,7 @@ flutter:
     - assets/sitemaps/
     - assets/data_images/
     - assets/data_csv/
+    - assets/data_models/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
